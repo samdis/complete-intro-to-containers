@@ -167,4 +167,20 @@ connect to through
   - a deployment unit that can not be seperated
 - service
   - group of pods
-- 
+- deployment
+  - describes what the state of the pods should be when they are deployed
+
+Note: Kompose is a project from k8s that converted from docker-compose to k8s files
+
+`kubectl proxy --port=8080`
+- start k8s on port 8080
+- `&` add at the end to background this
+
+`kubectl get all`
+- get all info
+
+`kubectl scale --replicas=5 deployment/web`
+- scale out to 5 more containers for that deployment
+
+`kubectl delte all --all`
+- delete everything
